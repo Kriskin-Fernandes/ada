@@ -1,8 +1,29 @@
+Q1)
 table:
+[0] = 0
+[1] = 0
+[2] = 5
+[3] = 5
+[4] = 10
+[5] = 10
+[6] = 15
+
+Q2)
+[0] = 0
+[1] = 0
+[2] = 5
+[3] = 4, 5
+[4] = 4, 10
+[5] = 7, 10, 9
+[6] = 7, 15, 14
+
+Q3)
+Combine the maximumElse function and the list generation into one, using an accumulator to keep track of the maximum value seen so far, and checking it with every list item calculated. 
+
 [0] = 0
 [1] = 0
 [2] = 5 + table[0] = 5
 [3] = max(4 + table[0], 5 + table[1]) = max(4, 5) = 5
 [4] = max(4 + table[1], 5 + table[2]) = max (4, 10) = 10
-[5] = max(4 + table[2], 5 + table[3]) = max (9, 10) = 10
+[5] = max(7 + table[0], 5 + table[3], 4 + table[2]) = max(7, 10, 9) = 10
 [6] = max(7 + table[1], 5 + table[4], 4 + table[3]) = max(7, 15, 14) = 15
